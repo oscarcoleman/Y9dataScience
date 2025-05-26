@@ -1,2 +1,3 @@
 # Y9dataScience
-Year 9 Unit 2 Data Science
+## Week 1
+Worked on Activities A, in Google Classroom, learnt about data science basics.
