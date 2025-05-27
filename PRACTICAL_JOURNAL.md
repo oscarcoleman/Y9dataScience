@@ -1,4 +1,7 @@
 # Y9dataScience
+
+All work, including questions, in this markdown file is sourced from the following: https://vormamim-web-programming.gitbook.io/hsc-software-engineering/pandas-for-data-science/week-3/filtering-sorting-and-grouping 
+
 ## Week 1
 Worked on Activities A, in Google Classroom, learned about data science basics.
 
@@ -26,11 +29,11 @@ print(df.columns)
 
 ##### Name 3 of them and explain what they represent.
 
-Name: Name of athlete
+- Name: Name of athlete
 
-City: Home city of athlete
+- City: Home city of athlete
 
-Medal: Medal, if any, won by athlete
+- Medal: Medal, if any, won by athlete
 
 ##### What do the first 5 rows show?
 
@@ -53,3 +56,31 @@ The stats of the first 5 athletes.
 - 196594 Males
 
 - 74522 Females
+
+##### What is the average age?
+
+25.6
+
+##### List oldest and youngest athlete age.
+
+- Oldest is 97
+
+- Youngest is 10
+
+##### Any columns with missing or strange values?
+
+Year and Index have means and whatnot that are irrelevant.
+
+#### Reflection Questions
+
+##### What’s one thing you learned about the Olympics dataset?
+
+It has an extremely large collection of records about athletes, and all of their stats.
+
+##### What did you find challenging in setting up or running Pandas?
+
+Nothing, it all went smoothly.
+
+##### What’s something you'd like to analyse next?
+
+Population stats.
