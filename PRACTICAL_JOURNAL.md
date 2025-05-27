@@ -26,11 +26,11 @@ print(df.columns)
 
 ##### Name 3 of them and explain what they represent.
 
-Name: Name of athlete
+- Name: Name of athlete
 
-City: Home city of athlete
+- City: Home city of athlete
 
-Medal: Medal, if any, won by athlete
+- Medal: Medal, if any, won by athlete
 
 ##### What do the first 5 rows show?
 
