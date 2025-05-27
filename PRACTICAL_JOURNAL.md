@@ -1,4 +1,7 @@
 # Y9dataScience
+
+All work, including questions, in this markdown file is sourced from the following: https://vormamim-web-programming.gitbook.io/hsc-software-engineering/pandas-for-data-science/week-3/filtering-sorting-and-grouping 
+
 ## Week 1
 Worked on Activities A, in Google Classroom, learned about data science basics.
 
