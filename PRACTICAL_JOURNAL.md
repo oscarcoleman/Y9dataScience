@@ -20,12 +20,11 @@ print(df.columns)
 ### Tuesday
 #### Questions
 
-How many columns are in the dataset?
+##### How many columns are in the dataset?
 
 15
 
-
-Name 3 of them and explain what they represent.
+##### Name 3 of them and explain what they represent.
 
 Name: Name of athlete
 
@@ -33,7 +32,6 @@ City: Home city of athlete
 
 Medal: Medal, if any, won by athlete
 
-
-What do the first 5 rows show?
+##### What do the first 5 rows show?
 
 The stats of the first 5 athletes.
