@@ -53,3 +53,31 @@ The stats of the first 5 athletes.
 - 196594 Males
 
 - 74522 Females
+
+##### What is the average age?
+
+25.6
+
+##### List oldest and youngest athlete age.
+
+- Oldest is 97
+
+- Youngest is 10
+
+##### Any columns with missing or strange values?
+
+Year and Index have means and whatnot that are irrelevant.
+
+#### Reflection Questions
+
+##### What’s one thing you learned about the Olympics dataset?
+
+It has an extremely large collection of records about athletes, and all of their stats.
+
+##### What did you find challenging in setting up or running Pandas?
+
+Nothing, it all went smoothly.
+
+##### What’s something you'd like to analyse next?
+
+Population stats.
