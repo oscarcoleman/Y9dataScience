@@ -50,4 +50,6 @@ The stats of the first 5 athletes.
 
 ##### Male vs female athletes?
 
-196594 Males, 74522 Females
+- 196594 Males
+
+- 74522 Females
