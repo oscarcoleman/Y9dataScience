@@ -17,3 +17,5 @@ print(df.head())
 # Show the column names
 print(df.columns)
 ```
+### Tuesday
+#### a
