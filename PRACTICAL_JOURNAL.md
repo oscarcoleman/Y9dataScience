@@ -3,10 +3,11 @@
 All work, including questions, in this markdown file is sourced from the following: https://vormamim-web-programming.gitbook.io/hsc-software-engineering/pandas-for-data-science/week-3/filtering-sorting-and-grouping 
 
 ## Week 1
+### 23/5
 Worked on Activities A, in Google Classroom, learned about data science basics.
 
 ## Week 2
-### Monday
+### Monday 26/5
 I installed pandas on VS code, and ran the following code:
 ```
 import pandas as pd
@@ -20,7 +21,7 @@ print(df.head())
 # Show the column names
 print(df.columns)
 ```
-### Tuesday
+### Tuesday 27/5
 #### Questions
 
 ##### How many columns are in the dataset?
@@ -84,3 +85,15 @@ Nothing, it all went smoothly.
 ##### What’s something you'd like to analyse next?
 
 Population stats.
+
+## Week 3
+### Tuesday 27/5
+#### What do these filters do?
+
+They filter out the data (athletes) that is in accordance with, in one instance, being female and, in another, being older than 35.
+
+#### How many rows were returned?
+
+5
+
+
