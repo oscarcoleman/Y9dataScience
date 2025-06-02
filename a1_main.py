@@ -49,6 +49,9 @@ print(sorted_by_weight[['Name', 'Weight', 'Sport']].head(10))
 sport_counts = female_athletes['Sport'].value_counts()
 print(sport_counts.head())
 
+sport_counts_male = male_athletes['Sport'].value_counts()
+print(sport_counts_male.head())
+
 # Average weight by sex and sport
 avg_weight_females = female_athletes.groupby('Sport')['Weight'].mean().sort_values(ascending=False)
 print(avg_weight_females.head())
