@@ -114,4 +114,22 @@ print(sorted_by_weight[['Name', 'Weight', 'Sport']].head(10))
 # Count participants in each sport
 sport_counts = female_athletes['Sport'].value_counts()
 print(sport_counts.head())
+
+# Average weight by sex and sport
+avg_weight_females = female_athletes.groupby('Sport')['Weight'].mean().sort_values(ascending=False)
+print(avg_weight_females.head())
+
+avg_weight_males = male_athletes.groupby('Sport')['Weight'].mean().sort_values(ascending=False)
+print(avg_weight_males.head())
+
+# Filter Under 18s and save to new CSV
+gymnasts = df[df['Age'] < 18]
+gymnasts.to_csv('athletes_under_18.csv', index=False)
+
+# Filter Gold Medalists and save to new CSV
+gymnasts = df[df['Medal'] == 'Gold']
+gymnasts.to_csv('gold_medalists.csv', index=False)
+```
+and
+```
 ```
