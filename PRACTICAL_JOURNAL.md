@@ -132,4 +132,50 @@ gymnasts.to_csv('gold_medalists.csv', index=False)
 ```
 and
 ```
+# Filter for female athletes only
+female_athletes = df[df['Sex'] == 'F']
+print(female_athletes.head())
+
+# Filter for male athletes only
+male_athletes = df[df['Sex'] == 'M']
+print(male_athletes.head())
 ```
+
+### Week 3 Reflection Questions
+#### What was the easiest filtering task and why?
+
+The filters that were measuring a true or false of one quality of one column (due to simplicity), such as the following
+```
+# Filter Under 18s and save to new CSV
+gymnasts = df[df['Age'] < 18]
+gymnasts.to_csv('athletes_under_18.csv', index=False)
+```
+#### What was the most difficult grouping or sorting task?
+
+ALbeit not greatly difficult, the following required me to change "df" to a specifically made variable, as is shown below
+
+These
+```
+avg_weight_females = female_athletes.groupby('Sport')['Weight'].mean().sort_values(ascending=False)
+print(avg_weight_females.head())
+
+avg_weight_males = male_athletes.groupby('Sport')['Weight'].mean().sort_values(ascending=False)
+print(avg_weight_males.head())
+```
+Required these
+```
+# Filter for female athletes only
+female_athletes = df[df['Sex'] == 'F']
+print(female_athletes.head())
+
+# Filter for male athletes only
+male_athletes = df[df['Sex'] == 'M']
+print(male_athletes.head())
+```
+#### What trends surprised you in the Olympic data?
+
+Skiing was more popular among females than males
+
+#### What kinds of real-world questions could this kind of analysis help answer?
+
+Gender equality in sports
