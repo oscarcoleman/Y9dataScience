@@ -96,4 +96,9 @@ They filter out the data (athletes) that is in accordance with, in one instance,
 
 5
 
+### Monday 2/6
+I have worked on writing the following code:
+```
+```
+
 
