@@ -3,10 +3,11 @@
 All work, including questions, in this markdown file is sourced from the following: https://vormamim-web-programming.gitbook.io/hsc-software-engineering/pandas-for-data-science/week-3/filtering-sorting-and-grouping 
 
 ## Week 1
+### 23/5
 Worked on Activities A, in Google Classroom, learned about data science basics.
 
 ## Week 2
-### Monday
+### Monday 26/5
 I installed pandas on VS code, and ran the following code:
 ```
 import pandas as pd
@@ -20,7 +21,7 @@ print(df.head())
 # Show the column names
 print(df.columns)
 ```
-### Tuesday
+### Tuesday 27/5
 #### Questions
 
 ##### How many columns are in the dataset?
@@ -84,3 +85,33 @@ Nothing, it all went smoothly.
 ##### What’s something you'd like to analyse next?
 
 Population stats.
+
+## Week 3
+### Tuesday 27/5
+#### What do these filters do?
+
+They filter out the data (athletes) that is in accordance with, in one instance, being female and, in another, being older than 35.
+
+#### How many rows were returned?
+
+5
+
+### Monday 2/6
+I have worked on writing the following code:
+```
+# Filter for athletes from Australia in Swimming
+australian_swimmers = df[(df['Country'] == 'Australia') & (df['Sport'] == 'Swimming')]
+print(australian_swimmers.head())
+
+# Sort by height
+sorted_by_height = df.sort_values(by='Height', ascending=False)
+print(sorted_by_age[['Name', 'Height', 'Sport']].head(10))
+
+# Sort by weight
+sorted_by_weight = df.sort_values(by='Weight', ascending=False)
+print(sorted_by_weight[['Name', 'Weight', 'Sport']].head(10))
+
+# Count participants in each sport
+sport_counts = female_athletes['Sport'].value_counts()
+print(sport_counts.head())
+```
