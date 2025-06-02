@@ -29,8 +29,8 @@ print(female_athletes.head())
 older_athletes = df[df['Age'] > 35]
 print(older_athletes[['Name', 'Age', 'Sport']].head())
 
-# Filter for athletes from Australia in Swimming
-australian_swimmers = df[(df['Country'] == 'Australia') & (df['Sport'] == 'Swimming')]
+# Filter for athletes from Australian Swimming
+australian_swimmers = df[(df['Team'] == 'Australia') & (df['Sport'] == 'Swimming')]
 print(australian_swimmers.head())
 
 # Sort by height
