@@ -180,6 +180,26 @@ Skiing was more popular among females than males
 
 Gender equality in sports
 
-#### Why do you think these three operations [dictionaires] are key to working with data and information?
+#### Why do you think these three operations [dictionaries] are key to working with data and information?
 
-Disctionaries are important for categorising and labelling data and information, which is desirable when dealing with large piles of data, some distinct and others conforming to a pattern.
+Dictionaries are important for categorising and labelling data and information, which is desirable when dealing with large piles of data, some distinct and others conforming to a pattern.
+
+## Week 4
+### Friday 6/6
+#### Which 3 columns have the most missing values?
+
+1. Medals
+2. Weight
+3. Height
+
+#### Why might this happen in real-world Olympic data?
+
+In the case of medals, not every athlete will actually win a medal. In regards to height and weight, there may be errors in records (when dealing with such large amounts of data, it is understandable), especially if height and weight are not greatly important to the sport.
+
+#### How many rows did you remove?
+
+208653
+
+#### What are the pros and cons of dropping data?
+
+The advantages would be cleaning out incomplete data, which may well otherwise be getting in the way. However, there may still be important data, even if incomplete, such as an error in recording a gold medalist who would now be wiped from the record.
