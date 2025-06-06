@@ -179,3 +179,7 @@ Skiing was more popular among females than males
 #### What kinds of real-world questions could this kind of analysis help answer?
 
 Gender equality in sports
+
+#### Why do you think these three operations [dictionaires] are key to working with data and information?
+
+Disctionaries are important for categorising and labelling data and information, which is desirable when dealing with large piles of data, some distinct and others conforming to a pattern.
