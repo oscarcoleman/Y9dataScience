@@ -66,3 +66,14 @@ gymnasts.to_csv('athletes_under_18.csv', index=False)
 # Filter Gold Medalists and save to new CSV
 gymnasts = df[df['Medal'] == 'Gold']
 gymnasts.to_csv('gold_medalists.csv', index=False)
+
+# Count missing values in each column
+print(df.isnull().sum())
+
+# Drop rows missing both height and weight
+df_cleaned = df.dropna(subset=['Weight'])
+print(df_cleaned.shape)
+
+
+avg_weight = df_cleaned['Weight'].mean()
+df.loc[df_cleaned['Weight'].notna(), 'Weight'] = avg_weight # fix with copilot
