@@ -140,6 +140,22 @@ print(female_athletes.head())
 male_athletes = df[df['Sex'] == 'M']
 print(male_athletes.head())
 ```
+### Tuesday 10/6
+Today I created the folders "directory_practice" and "wk4_dictionary_data_work", and worked on creating, accessing and using files and directories, e.g
+```
+parent_folder = "directory_practice"
+parent_file = "athlete_events.csv"
+
+parent_file_path = parent_folder + "/" + parent_file
+
+file = open(parent_file_path, "r", encoding="utf-8")
+
+contents = file.read()
+
+print(contents)
+
+file.close()
+```
 
 ### Week 3 Reflection Questions
 #### What was the easiest filtering task and why?
@@ -203,3 +219,4 @@ In the case of medals, not every athlete will actually win a medal. In regards t
 #### What are the pros and cons of dropping data?
 
 The advantages would be cleaning out incomplete data, which may well otherwise be getting in the way. However, there may still be important data, even if incomplete, such as an error in recording a gold medalist who would now be wiped from the record.
+
