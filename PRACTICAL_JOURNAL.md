@@ -220,4 +220,3 @@ In the case of medals, not every athlete will actually win a medal. In regards t
 
 The advantages would be cleaning out incomplete data, which may well otherwise be getting in the way. However, there may still be important data, even if incomplete, such as an error in recording a gold medalist who would now be wiped from the record.
 
-## Week 5
