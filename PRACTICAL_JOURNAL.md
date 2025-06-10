@@ -140,6 +140,22 @@ print(female_athletes.head())
 male_athletes = df[df['Sex'] == 'M']
 print(male_athletes.head())
 ```
+### Tuesday 10/6
+Today I created the folders "directory_practice" and "wk4_dictionary_data_work", and worked on creating, accessing and using files and directories, e.g
+```
+parent_folder = "directory_practice"
+parent_file = "athlete_events.csv"
+
+parent_file_path = parent_folder + "/" + parent_file
+
+file = open(parent_file_path, "r", encoding="utf-8")
+
+contents = file.read()
+
+print(contents)
+
+file.close()
+```
 
 ### Week 3 Reflection Questions
 #### What was the easiest filtering task and why?
