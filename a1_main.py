@@ -74,6 +74,7 @@ print(df.isnull().sum())
 df_cleaned = df.dropna(subset=['Weight'])
 print(df_cleaned.shape)
 
+# Save your cleaned version
+df_cleaned.to_csv("athlete_events_cleaned.csv", index=False)
 
-avg_weight = df_cleaned['Weight'].mean()
-df.loc[df_cleaned['Weight'].notna(), 'Weight'] = avg_weight # fix with copilot
+# ensure cleaned file is cleaned
