@@ -156,7 +156,7 @@ print(contents)
 
 file.close()
 ```
-I also wrote the ran the following code to move the cleaned data into a new csv:
+I also wrote the ran the following code to practice moving data:
 ```
 import pandas as pd
 
@@ -250,3 +250,32 @@ In the case of medals, not every athlete will actually win a medal. In regards t
 
 The advantages would be cleaning out incomplete data, which may well otherwise be getting in the way. However, there may still be important data, even if incomplete, such as an error in recording a gold medalist who would now be wiped from the record.
 
+### Friday 13/6
+
+#### Did cleaning improve the dataset?
+
+Using the following code to compare the cleaned vs orginal filesw, with df being the original and df_2 being the cleaned file:
+```
+print(df.isnull().sum())
+
+print(df_2.isnull().sum())
+```
+I found that the cleaned file had cleaned all missing values for height and weight, and had substantially reduced missing values of medals and age, although these were not entirely eliminated.
+
+#### What questions could now be answered more confidently?
+
+Inquiries into height and weight would be more accurate and complete.
+
+### Week 4 Reflection Questions
+
+#### What was the dirtiest column in the dataset?
+
+The medals column
+
+#### How did you decide when to drop vs fix missing data?
+
+If other data in the row may still be relevant (not false), then fixing would be wiser.
+
+#### Why is data cleaning so important in real-world projects?
+
+Data cleaning is vital to ensure improved efficiency in datasets, and in eliminating incomplete data which would not be useful.
