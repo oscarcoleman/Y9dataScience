@@ -279,3 +279,23 @@ If other data in the row may still be relevant (not false), then fixing would be
 #### Why is data cleaning so important in real-world projects?
 
 Data cleaning is vital to ensure improved efficiency in datasets, and in eliminating incomplete data which would not be useful.
+
+## Week 5
+
+### Friday 13/6
+
+#### Are labels readable?
+
+Yes
+
+#### Does the chart title clearly explain what’s shown?
+
+Perfectly.
+
+#### Is there a trend over time?
+
+Yes, upward. Particularly during the 1980-2000 period, before and after which, it has been fairly up and down.
+
+#### Does this graph suggest changes in athlete demographics?
+
+It may suggest that, as it has adopted more sports beyond the traditional athletics, it has attracted more older competitors.
