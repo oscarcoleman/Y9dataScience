@@ -90,9 +90,6 @@ print(df_cleaned['Sport'].unique())
 # Strip whitespace from strings
 df_cleaned['Medal'] = df_cleaned['Medal'].str.strip()
 
-# Check again for missing values
-#print(df_cleaned.isnull().sum())
-
 # Get stats after cleaning
 print(df_cleaned.describe())
 
@@ -101,6 +98,6 @@ df_cleaned.to_csv("athlete_events_cleaned.csv", index=False)
 
 # ensure cleaned file is cleaned 
 
-print(df_2.isnull().sum())
+print(df_2.isnull().sum()) # checks missing values of cleaned file
 
-print(df.isnull().sum())
+print(df.isnull().sum()) # checks missing values of original file
