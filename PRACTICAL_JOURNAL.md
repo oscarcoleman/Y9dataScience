@@ -156,7 +156,7 @@ print(contents)
 
 file.close()
 ```
-I also wrote the ran the following code:
+I also wrote the ran the following code to move the cleaned data into a new csv:
 ```
 import pandas as pd
 
