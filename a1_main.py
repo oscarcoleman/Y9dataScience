@@ -1,6 +1,7 @@
 import pandas as pd
 # Load the dataset
 df = pd.read_csv("athlete_events.csv")
+df_2 = pd.read_csv("athlete_events_cleaned.csv")
 
 # Show the first 5 rows
 print(df.head())
@@ -71,10 +72,35 @@ gymnasts.to_csv('gold_medalists.csv', index=False)
 print(df.isnull().sum())
 
 # Drop rows missing both height and weight
-df_cleaned = df.dropna(subset=['Weight'])
+df_cleaned = df.dropna(subset=['Height', 'Weight'])
 print(df_cleaned.shape)
+
+# Unique values 
+print(df_cleaned['Sex'].unique())
+print(df_cleaned['Medal'].unique()) 
+print(df_cleaned['Age'].unique())
+print(df_cleaned['Name'].unique())
+print(df_cleaned['Games'].unique())
+print(df_cleaned['Team'].unique())
+print(df_cleaned['Season'].unique())
+print(df_cleaned['City'].unique())
+print(df_cleaned['Event'].unique())
+print(df_cleaned['Sport'].unique())
+
+# Strip whitespace from strings
+df_cleaned['Medal'] = df_cleaned['Medal'].str.strip()
+
+# Check again for missing values
+#print(df_cleaned.isnull().sum())
+
+# Get stats after cleaning
+print(df_cleaned.describe())
 
 # Save your cleaned version
 df_cleaned.to_csv("athlete_events_cleaned.csv", index=False)
 
-# ensure cleaned file is cleaned
+# ensure cleaned file is cleaned 
+
+print(df_2.isnull().sum())
+
+print(df.isnull().sum())
