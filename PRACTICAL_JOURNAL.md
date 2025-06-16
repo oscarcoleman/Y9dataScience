@@ -299,3 +299,17 @@ Yes, upward. Particularly during the 1980-2000 period, before and after which, i
 #### Does this graph suggest changes in athlete demographics?
 
 It may suggest that, as it has adopted more sports beyond the traditional athletics, it has attracted more older competitors.
+
+### Monday 16/6
+
+#### Change bins=30 to bins=10. What changes?
+
+It becomes less smooth, and it gives more general categorisations
+
+#### Describe the shape of the data: is it normal, skewed, or unusual?
+
+The data is skewed to the left, with the common weight range being around the 55-85 area.
+
+#### What percentage of medals are gold, silver, and bronze?
+
+33.7% gold, 33.6% bronze, 32.7% silver
