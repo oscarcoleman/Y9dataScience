@@ -302,6 +302,8 @@ It may suggest that, as it has adopted more sports beyond the traditional athlet
 
 ### Monday 16/6
 
+Besides from answering the following questions, I created two bar graphs: one showing the top ten countries by participation, and the other by medals won. Notably it showed Hungary to be doing quite well in terms of medals, and Australia doing the opposite. However, the gold medal data was sourced from an uncleaned file, which is leading to inaccuracies (such as the presence of the USSR) that must be addressed later in the week.
+
 #### Change bins=30 to bins=10. What changes?
 
 It becomes less smooth, and it gives more general categorisations
