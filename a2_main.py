@@ -2,7 +2,8 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 df = pd.read_csv("athlete_events_cleaned.csv")
-df2 = pd.read_csv("gold_medalists_cleaned.csv")
+df2 = pd.read_csv("gold_medalists.csv")
+df3 = pd.read_csv("gold_medalists_cleaned.csv")
 
 sport_counts = df['Sport'].value_counts().head(10)
 
@@ -43,12 +44,22 @@ plt.show()
 
 country_medal_counts = df2['Team'].value_counts().head(10)
 
-country_medal_counts.plot(kind='bar', title='Gold Medals by Country')
+country_medal_counts.plot(kind='bar', title='Gold Medals by Country Uncleaned')
 plt.xlabel('Country')
 plt.ylabel('Number')
 plt.xticks(rotation=45)
 plt.tight_layout()
-plt.savefig("country_medal_counts_bar_graph.png")
+plt.savefig("country_medal_counts_bar_graph_uncleaned.png")
+plt.show()
+
+country_medal_counts = df3['Team'].value_counts().head(10)
+
+country_medal_counts.plot(kind='bar', title='Gold Medals by Country Cleaned')
+plt.xlabel('Country')
+plt.ylabel('Number')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig("country_medal_counts_bar_graph_cleaned.png")
 plt.show()
 
 country_counts = df['Team'].value_counts().head(10)
