@@ -3,11 +3,13 @@
 import pandas as pd
 
 df = pd.read_csv("gold_medalists.csv")
+df2 = pd.read_csv("gold_medalists_cleaned.csv")
 
 # missing value count
 print(df.isnull().sum())
 
-df_cleaned = df.dropna(inplace=True)
+df.dropna(inplace=True)
 
-df_cleaned.to_csv("gold_medalists_cleaned.csv", index=False)
+df.to_csv("gold_medalists_cleaned.csv", index=False)
 
+print(df2.isnull().sum())
