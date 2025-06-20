@@ -362,3 +362,5 @@ It turned out that the Soviet Union, although being outside of the top ten due t
 #### Cleaned and by Particpation
 
 ![countries by participation](country_counts_bar_graph.png)
+
+After this I began working on the following: https://github.com/oscarcoleman/Y9dataScience/blob/main/WK6_PROJECT_JOURNAL.md 
