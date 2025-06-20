@@ -327,3 +327,54 @@ The data is skewed to the left, with the common weight range being around the 55
 #### What percentage of medals are gold, silver, and bronze?
 
 33.7% gold, 33.6% bronze, 32.7% silver
+
+### Friday 20/6
+
+I cleaned the gold_medalists.csv file by writing the following code:
+
+```
+# clean gold_medalists.csv
+
+import pandas as pd
+
+df = pd.read_csv("gold_medalists.csv")
+df2 = pd.read_csv("gold_medalists_cleaned.csv")
+
+# missing value count
+print(df.isnull().sum())
+
+df.dropna(inplace=True)
+
+df.to_csv("gold_medalists_cleaned.csv", index=False)
+
+print(df2.isnull().sum())
+```
+It turned out that the Soviet Union, although being outside of the top ten due to participation (absent since early 90s), they are the second highest scoring in gold medals. Below is a comparison between the uncleaned vs cleaned (missing age, height, and weight values wiped) results (many results were slimmer to):
+
+#### Uncleaned
+
+1. US
+2. USSR
+3. Germany
+4. Italy
+5. Great Britain
+6. France
+7. Sweden
+8. Hungary
+9. Canada
+10. East Germany
+
+![uncleaned bar graph](country_medal_counts_bar_graph.png)
+
+#### Cleaned
+
+1. US
+2. USSR
+3. Germany
+4. East Germany
+5. Russia
+6. Canada
+7. Great Britain
+8. Australia
+9. China
+10. Italy
