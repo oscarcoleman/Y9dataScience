@@ -355,7 +355,7 @@ It turned out that the Soviet Union, although being outside of the top ten due t
 
 ![cleaned bar graph](country_medal_counts_bar_graph_cleaned.png)
 
-#### Cleaned
+#### Uncleaned
 
 ![uncleaned bar graph](country_medal_counts_bar_graph_uncleaned.png)
 
