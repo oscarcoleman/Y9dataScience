@@ -351,30 +351,14 @@ print(df2.isnull().sum())
 ```
 It turned out that the Soviet Union, although being outside of the top ten due to participation (absent since early 90s), they are the second highest scoring in gold medals. Below is a comparison between the uncleaned vs cleaned (missing age, height, and weight values wiped) results (many results were slimmer to):
 
-#### Uncleaned
+#### Cleaned
 
-1. US
-2. USSR
-3. Germany
-4. Italy
-5. Great Britain
-6. France
-7. Sweden
-8. Hungary
-9. Canada
-10. East Germany
-
-![uncleaned bar graph](country_medal_counts_bar_graph.png)
+![cleaned bar graph](country_medal_counts_bar_graph_cleaned.png)
 
 #### Cleaned
 
-1. US
-2. USSR
-3. Germany
-4. East Germany
-5. Russia
-6. Canada
-7. Great Britain
-8. Australia
-9. China
-10. Italy
+![uncleaned bar graph](country_medal_counts_bar_graph_uncleaned.png)
+
+#### Cleaned and by Particpation
+
+![countries by participation](country_counts_bar_graph.png)
