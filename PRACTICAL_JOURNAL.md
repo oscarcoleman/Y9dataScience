@@ -349,7 +349,7 @@ df.to_csv("gold_medalists_cleaned.csv", index=False)
 
 print(df2.isnull().sum())
 ```
-It turned out that the Soviet Union, although being outside of the top ten due to participation (absent since early 90s), they are the second highest scoring in gold medals. Below is a comparison between the uncleaned vs cleaned (missing age, height, and weight values wiped) results (many results were slimmer to):
+It turned out that the Soviet Union, although being outside of the top ten due to participation (absent since early 90s), they are the second highest scoring in gold medals. Below is a comparison between the uncleaned vs cleaned (missing age, height, and weight values wiped) results:
 
 #### Cleaned
 
