@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 df = pd.read_csv("athlete_events_cleaned.csv")
-df2 = pd.read_csv("gold_medalists.csv")
+df2 = pd.read_csv("gold_medalists_cleaned.csv")
 
 sport_counts = df['Sport'].value_counts().head(10)
 
