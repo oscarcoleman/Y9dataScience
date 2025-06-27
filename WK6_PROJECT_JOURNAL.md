@@ -16,5 +16,4 @@ Olympics fans and anyone interested in who's done best in which periods.
 - I will apply a filter and visualise using two seperate bar graphs.
 ## Project Non-Functional Requirements
 - The project will be presentated simply and as such easy to interpret.
-A | B | C
-1 | 2 | 3
+
