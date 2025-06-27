@@ -16,6 +16,8 @@ Olympics fans and anyone interested in who's done best in which periods.
 - I will apply a filter and visualise using two seperate bar graphs.
 ## Project Non-Functional Requirements
 - The project will be presentated simply and as such easy to interpret.
+
+
 | Test Case              | Input                                | Expected Output                               |
 |------------------------|--------------------------------------|-----------------------------------------------|
 |Avoids Leaving          |Colour sensor detects black line      |Robot stops, turns 180 degrees, and keeps going|
