@@ -37,6 +37,8 @@ Below are the results, with the percentage representing the ratio between total 
 ![1952-1972](country_medal_athlete_ratios_top10_1952_to_1972.png)
 #### 2000-2020
 ![2000-2020](country_medal_athlete_ratios_top10_2000_to_2020.png)
+## Conclusion
+The results highlighted that while the Olympics were, in post-world-war-2 times, dominated by eastern European and central Asian countries, they are now, with more diverse participation, being led by many smaller countries such as Norway, Fiji, Kosovo and Cameroon. It has also shown USA and Russia to be constants throughout the decades. 
 ## Code
 ```
 import pandas as pd
