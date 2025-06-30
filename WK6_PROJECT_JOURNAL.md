@@ -28,4 +28,6 @@ Olympics fans and anyone interested in who's done best in which periods.
 ## Reflection Questions - Monday
 1. I chose this particular project question because I thought it would be interesting to see the effect many of the newer countries have had on the older ones.
 2. This analysis will benefit anyone curious to know which countries are most capable, on average, and how that has evolved over time.
-3. I do not anticipate this to be an especially difficult task, although there will almost cetrainly be some problems that arise in the coding process.
+3. I do not anticipate this to be an especially difficult task, although I would expect some problems to pop up in the coding process.
+
+
