@@ -13,18 +13,38 @@ print(filtered_df.head())
 filtered_df2 = df[(df['Year'] >= 2000) & (df['Year'] <= 2020)]
 print(filtered_df2.head())
 
-print(len(df))
-print(len(filtered_df))
-print(len(filtered_df2))
+#total number of athletes per country
+athlete_counts = df2['NOC'].value_counts()
 
-a = df[(df['NOC'] == 'USA')]
-b = df2[(df2['NOC'] == 'USA')]
-c = len(a) / len(b)
-print(c)
+#total number of medals won per country
+medal_counts = df['NOC'].value_counts()
 
-a2 = df[(df['NOC'] == 'GDR')]
-b2 = df2[(df2['NOC'] == 'GDR')]
-c2 = len(a2) / len(b2)
-print(c2)
+# combines two above in dataframe
+result = pd.DataFrame({
+    "Total Athletes": athlete_counts,
+    "Total Medals": medal_counts
+}).fillna(0)
 
+# calculate medals per athlete 
+result["Medals per Athlete"] = result["Total Medals"] / result["Total Athletes"] 
 
+#convert to percentage
+result["Medal-Athlete Percentage Ratio"] = result["Medals per Athlete"] * 100
+
+athlete_medal_ratio = result["Medal-Athlete Percentage Ratio"]
+
+# sort medal winner percentage ratio in descending order
+athlete_medal_ratio_sorted = athlete_medal_ratio.sort_values(ascending=False)
+
+country_medal_efficiency_counts = athlete_medal_ratio_sorted.head(10)
+
+print(result.head(10))
+
+#Plot top ten in bar chart
+country_medal_efficiency_counts.plot(kind='bar', title='Countries by Medal-Athlete ratio')
+plt.xlabel('Country')
+plt.ylabel('Percentage')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig("country_medal_athlete_ratios_top10.png")
+plt.show()
